@@ -9,6 +9,7 @@ void printTreeRow(int, int);
 void printTree(int, int);
 void printTrunk(int, int, int);
 
+// function prints number of spaces
 void printSpaces(int numSpaces)
 {
   for (int i = 0; i < numSpaces; i++)
@@ -17,6 +18,7 @@ void printSpaces(int numSpaces)
   }
 }
 
+// function prints number of stars
 void printStars(int numStars)
 {
   for (int i = 0; i < numStars; i++)
@@ -25,6 +27,7 @@ void printStars(int numStars)
   }
 }
 
+// function prints the upper part of the tree
 void printTreeRow(int height, int row)
 {
   int numSpaces = height - row;
@@ -35,6 +38,7 @@ void printTreeRow(int height, int row)
   printSpaces(numSpaces);
 }
 
+// function that prints the numbers of print 
 void printTree(int height, int count)
 {
   for (int i = 0; i < height; i++)
@@ -47,6 +51,7 @@ void printTree(int height, int count)
   }
 }
 
+// function that prints the trunk of the christmas tree
 void printTrunk(int height, int count, int trunk)
 {
   for (int i = 0; i < trunk; i++)
@@ -63,7 +68,7 @@ void printTrunk(int height, int count, int trunk)
 
 int main()
 {
-  /*
+  /* This is the simple version for printing christmas trees
   int height = 5;
   int trunk = 2;
   int count = 4;
